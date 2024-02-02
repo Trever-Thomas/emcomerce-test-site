@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Hompage</title>
+  <link rel="Stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="header">
+    <img src="./img/lonely_road_by_trever_thomas_dgmr1a8.jpg" alt="Logo" width="120px" height="120px">
+    <img src="./img/lonely-boi-bread-co-name.png" alt="lonely-boi-bread-co-name" width="300px" height="120px">
+    
+    <a class="active" href="index.html">Home</a>
+    <a class="link" href="./pages/about.html">About</a>
+    
+    <div class="dropdown">
+        <a class="link" href="./pages/product.html"><span>Products</span></a>
+        <div class="dropdown-content">
+          <p><a class="sublink" target="_blank" href="./pages/test-one.html">Test One HTML</a></p>
+          <p><a class="sublink" target="_blank" href="./pages/test-two.html">Test Two HTML</a></p>
+          <p><a class="sublink" target="_blank" href="./pages/test-three.html">Test Two HTML</a></p>
+        </div>
+    </div>
+  </div>
+  
+  <!-- CONTENT -->
+  <div class="content">
+    <div id="banner">
+      <div class="ad" id="ad1">
+          <a href="./pages/test-one.html" target="_blank">
+              <img src="./img/Fuck Around And Find Out.png" alt="Ad 1" >
+          </a>
+      </div>
+      <div class="ad" id="ad2">
+          <a href="./pages/test-two.html" target="_blank">
+              <img src="./img/Save Money with Membership.png" alt="Ad 2">
+          </a>
+      </div>
+      <div class="ad" id="ad3">
+          <a href="./pages/test-two.html" target="_blank">
+              <img src="./img/We Get It..png" alt="Ad 2">
+          </a>
+      </div>
+      <!-- Add more ad divs as needed -->
+ 
+    </div>
+  
+  <script>
+      const ads = document.querySelectorAll('.ad');
+      let currentIndex = 0;
+  
+      function showNextAd() {
+          ads.forEach(ad => ad.style.display = 'none');
+          ads[currentIndex].style.display = 'block';
+          currentIndex = (currentIndex + 1) % ads.length;
+      }
+  
+      setInterval(showNextAd, 10000); // Change 5000 to the number of milliseconds you want for each rotation
+  </script>
+
+    
+
+  </div>
+
+
+</body>
+</html>
