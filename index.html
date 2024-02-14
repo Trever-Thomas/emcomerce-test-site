@@ -7,7 +7,7 @@
 </head>
 <body>
 <div class="grid-container">
-  <div class="item1">
+  <div class="item1" id="header">
     <div class="header">
       <img src="./img/lonely_road_by_trever_thomas_dgmr1a8.jpg" alt="Logo" width="120px" height="120px">
       <img src="./img/lonely-boi-bread-co-name.png" alt="lonely-boi-bread-co-name" width="300px" height="120px">
@@ -26,9 +26,13 @@
     </div>
   </div>
   
-  <div class="item2">
-  </div>    
-  <div class="item3">  
+  <div class="item2" id="sidebar">
+    <div>
+      <p>FUCK You</p>
+      <img src="./img/coffee-milk-side-banner-ad.png" alt="Coffee Milk Ad" width="200" height="400">
+    </div>
+    </div>    
+  <div class="item3" id="banner">  
     <div id="banner">
       <div class="ad" id="ad1">
           <a href="./pages/test-one.html" target="_blank">
@@ -62,8 +66,64 @@
       setInterval(showNextAd, 10000); // Change 5000 to the number of milliseconds you want for each rotation
   </script> 
   </div>
-  <div class="item4">
+  <div class="item4" id="content">
     <!-- CONTENT -->
+    <main>
+      <section>
+          <h2>About Us</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      </section>
+  
+      <section>
+          <h2>Contact Information</h2>
+          <p>Email: contact@example.com</p>
+          <p>Phone: +1 (123) 456-7890</p>
+      </section>
+  
+      <div class="funny-div">
+          <h2>Super Useless Section</h2>
+          <p>This section contains absolutely nothing of value. Enjoy!</p>
+          <button class="useless-button" onclick="alert('This button does nothing!')">Click me for no reason</button>
+      </div>
+  </main>
+  
+  <div class="content">
+      <h1 style="text-align: center; font-size: 48px;">PRODUCTS</h1>
+          <div class="product-container">
+  
+              <p class="product">
+                  <a target="_blank" href="../pages/test-one.html">
+                      <img src="../img/bread1.jpg" alt="bread product 1" width="400" height="400">
+                  </a>
+                  <br>
+                  <a class="product-description" target="_blank" href="../pages/test-one.html"><span style="font-size: 30px;">Bread #1.</span>
+                      <br> A fragrant masterpiece of golden-brown perfection, this homemade loaf of bread boasts a crust that crackles with each bite, revealing a soft, airy interior with a delightful medley of wheaty aromas.</a>
+              </p>
+  
+              <p class="product">
+                  <a target="_blank" href="test-two.html">
+                      <img src="../img/bread2.jpg" alt="bread product 2" width="400" height="400">
+                  </a>
+                  <br>
+                  <a class="product-description" target="_blank" href="../pages/test-one.html"><span style="font-size: 30px;">Bread #2.</span>
+                      <br> A fragrant masterpiece of golden-brown perfection, this homemade loaf of bread boasts a crust that crackles with each bite, revealing a soft, airy interior with a delightful medley of wheaty aromas.</a>
+              </p>
+  
+              <p class="product">
+                  <a target="_blank" href="../pages/test-three.html">
+                      <img src="../img/bread3.jpg" alt="bread product 3" width="400" height="400">
+                  </a>
+                  <br>
+                  <a class="product-description" target="_blank" href="../pages/test-one.html"><span style="font-size: 30px;">Bread #3.</span>
+                      <br> A fragrant masterpiece of golden-brown perfection, this homemade loaf of bread boasts a crust that crackles with each bite, revealing a soft, airy interior with a delightful medley of wheaty aromas.</a>
+              </p>
+  
+          </div>
+  </div>
+  
+  <footer>
+      <p>&copy; 2024 The Useless Website. All rights reserved.</p>
+  </footer>
   </div>
 
 
