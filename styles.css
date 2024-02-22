@@ -24,6 +24,8 @@ body {
   
 }
 
+/* item1 = header / item2 = sidebar / item3 = banner / item4 = content */
+
 .item1 {
   grid-column: 1 / 15;
 }
@@ -36,12 +38,14 @@ body {
 
 .item3 {
   grid-column: 2/ 15;
-  grid-row: auto;
+  grid-row: 2;
   padding: 10px;
+  height: 120px;
 }
 
 .item4 {
   grid-column: 2 / 15;
+  grid-row: 3 / 5;
 }
 
 .dropdown {
@@ -153,3 +157,25 @@ a {
     height: 100%;
 }*/
 
+.mofo-ads { 
+  font-size: 26px; 
+  font-weight: 900;
+  font-family: serif; 
+  color:red;
+  text-align: center; 
+  animation: animate .75s linear infinite; 
+}
+
+@keyframes animate { 
+  0% { 
+      opacity: 0; 
+  } 
+
+  50% { 
+      opacity: 0.7; 
+  } 
+
+  100% { 
+      opacity: 0; 
+  } 
+} 
