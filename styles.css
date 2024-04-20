@@ -126,6 +126,7 @@ a {
 }
 
 .product {
+  flex: 1;
   text-align: center;
   border: whitesmoke solid 4px;
   padding: 4px;
