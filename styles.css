@@ -19,7 +19,7 @@ body {
 }
 
 .grid-container > div {
- /* border: red solid 2px;*/
+  border: red solid 2px;
   text-align: center;
   
 }
@@ -46,6 +46,11 @@ body {
 .item4 {
   grid-column: 2 / 15;
   grid-row: 3 / 5;
+}
+
+.item5 {
+
+  grid-row: 6;
 }
 
 .dropdown {
