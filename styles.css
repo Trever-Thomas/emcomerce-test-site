@@ -19,7 +19,7 @@ body {
 }
 
 .grid-container > div {
-  border: red solid 2px;
+ /* border: red solid 2px;*/
   text-align: center;
   
 }
@@ -75,6 +75,10 @@ body {
   padding: 50px;
 }
 
+.link:hover {
+  background-color: rgb(88, 81, 134);
+}
+
 .active {
   background-color: whitesmoke;
   color: black;
@@ -93,6 +97,16 @@ a {
   background-color: darkslateblue;
   display: flex;
   flex-shrink: 0;
+}
+
+.clicky-product-header {
+  color: whitesmoke;
+}
+
+.clicky-product-header:hover {
+  color: slateblue;
+  -webkit-text-stroke-color: whitesmoke;
+  -webkit-text-stroke-width: 1px;
 }
 
 .sublink {
@@ -129,13 +143,25 @@ a {
   flex: 1;
   text-align: center;
   border: whitesmoke solid 4px;
+  border-radius: 5%;
   padding: 4px;
   background-color: rgb(56, 55, 55);
+}
+
+.product:hover, .product-description:hover {
+  border-color: darkslateblue;
+  color: slateblue;
 }
 
 .product-description {
     color: whitesmoke;
 }
+
+/*
+.product-description:hover {
+  color:slateblue;
+}*/
+
 
 /*#banner {
     width: 100%;
