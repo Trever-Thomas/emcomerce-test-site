@@ -188,15 +188,28 @@ a {
 
 /*Single Product CSS*/
 
-.parent {
+.singprod {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(5, 1fr);
   grid-column-gap: 0px;
   grid-row-gap: 0px;
+  border: blue solid 2px;
   }
   
-  .div1 { grid-area: 2 / 1 / 6 / 2; }
-  .div2 { grid-area: 2 / 2 / 4 / 4; }
-  .div3 { grid-area: 2 / 4 / 4 / 6; }
-  .div4 { grid-area: 4 / 2 / 6 / 6; }
+  .side-menu { 
+    grid-area: 2 / 1 / 6 / 2;
+    border: red solid 2px;
+   }
+  .image-section { 
+    grid-area: 2 / 2 / 4 / 4; 
+    border: red solid 2px;
+  }
+  .description-cart { 
+    grid-area: 2 / 4 / 4 / 6; 
+    border: red solid 2px;
+  }
+  .reviews { 
+    grid-area: 4 / 2 / 6 / 6; 
+    border: red solid 2px;
+  }
