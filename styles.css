@@ -197,24 +197,53 @@ a {
   border: blue solid 2px;
   padding: 15px;
   }
+
+/* TITLE SECTION */  
+  .title { 
+    grid-area: 1 / 1 / 2 / 6; 
+    border: red solid 2px;
+  }
+
+  .product-title {
+    font-size: 70px;
+    text-align: center;
+      align-content: center;
+  }
+
+  .transaction-links {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding-left: 50px;
+    gap: 5px;
+  }
+
+  .linky {
+    color: lightgray;
+  }
   
+/* SIDE MENU */
   .side-menu { 
     grid-area: 2 / 1 / 6 / 2;
     padding: 15px;
     border: red solid 2px;
-   }
+  }
+
   .image-section { 
     grid-area: 2 / 2 / 4 / 4; 
     padding: 15px;
     border: red solid 2px;
   }
+
   .description-cart { 
     grid-area: 2 / 4 / 4 / 6; 
     padding: 15px;
     border: red solid 2px;
   }
+
   .reviews { 
     grid-area: 4 / 2 / 6 / 6; 
     padding: 15px;
     border: red solid 2px;
   }
+
