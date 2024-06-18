@@ -229,21 +229,27 @@ a {
     border: red solid 2px;
   }
 
+
+/* Image Section */  
   .image-section { 
     grid-area: 2 / 2 / 4 / 4; 
     padding: 15px;
     border: red solid 2px;
+    text-align: center;
   }
 
+/* Description And Add To Cart */ 
   .description-cart { 
     grid-area: 2 / 4 / 4 / 6; 
     padding: 15px;
     border: red solid 2px;
   }
 
+/* Reviews */  
   .reviews { 
     grid-area: 4 / 2 / 6 / 6; 
     padding: 15px;
     border: red solid 2px;
+    text-align: center;
   }
 
