@@ -33,3 +33,32 @@ function resetImage() {
 const mainImageContainer = document.querySelector('.main-image-container');
 mainImageContainer.addEventListener('mousemove', zoomImage);
 mainImageContainer.addEventListener('mouseleave', resetImage);
+
+document.addEventListener('DOMContentLoaded', () => {
+    const buttons = document.querySelectorAll('.add-to-cart');
+
+    buttons.forEach(button => {
+        button.addEventListener('click', () => {
+            const productId = button.getAttribute('data-product-id');
+            addToCart(productId);
+        });
+    });
+});
+
+// ************** ADD TO CART JS **************
+function addToCart(productId) {
+    let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+    // Check if product is already in cart
+    const productIndex = cart.findIndex(item => item.id === productId);
+    if (productIndex > -1) {
+        // Product is already in the cart, increase quantity
+        cart[productIndex].quantity += 1;
+    } else {
+        // Product is not in the cart, add as new item
+        cart.push({ id: productId, quantity: 1 });
+    }
+
+    localStorage.setItem('cart', JSON.stringify(cart));
+    alert('Product added to cart!');
+}
