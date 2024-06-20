@@ -47,14 +47,28 @@
     </div>
 
     <div class="image-section"> 
-        <h1>Image Section</h1>
-        <img src="../../img/bread1.jpg" height="400" width="300">
+        <div class="image-gallery">
+            <div class="main-image-container">
+                <img id="main-image" src="../../img/anxiety the myth 2.jpg" alt="Main Image">
+            </div>
+            <div class="thumbnail-container">
+                <img class="thumbnail" src="../../img/depression the man.jpg" alt="Thumbnail 1" onclick="changeImage('../../img/depression the man.jpg')">
+                <img class="thumbnail" src="../../img/poverty the legend.jpg" alt="Thumbnail 2" onclick="changeImage('../../img/poverty the legend.jpg')">
+                <img class="thumbnail" src="../../img/Necromancer.jpg" alt="Thumbnail 3" onclick="changeImage('../../img/Necromancer.jpg')">
+            </div>
+        </div>
     </div>
 
     <div class="description-cart"> 
-        <h1>Decription and Add To Cart</h1>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit deleniti, totam ducimus autem eos blanditiis eveniet enim, quae, nam corporis dolorum unde eius voluptatibus beatae? Dolorum doloremque repudiandae nulla quae!</p>
-        <button>Add To Cart</button>
+        <h1 style="font-size: 50px;">Decription and Add To Cart</h1>
+        <p style="font-size: 24px;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br>
+            Impedit deleniti, totam ducimus autem eos blanditiis eveniet enim, quae, nam corporis dolorum unde eius voluptatibus beatae? <br>
+            Dolorum doloremque repudiandae nulla quae!
+        </p>
+        <p class="price">Price: $3.50
+        </p>
+        <button class="add-to-wishlist">Add to Wishlist</button>
+        <button class="add-to-cart">Add To Cart</button>
     </div>
 
     <div class="reviews"> 
@@ -62,6 +76,6 @@
     </div>
 
 </div>
-
+<script src="../../script.js"></script>
 </body>
 </html>
