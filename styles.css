@@ -287,7 +287,31 @@ a {
 }
 
 .add-to-cart {
-  
+  background-color: darkslateblue;
+  color: whitesmoke;
+  padding: 10px 20px;
+  margin-top: 50px;
+  margin-left: 20px;
+  border: whitesmoke solid 2px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.add-to-cart:hover {
+  background-color: slateblue;
+}
+
+.add-to-wishlist {
+  background-color: darkslateblue;
+  color: whitesmoke;
+  padding: 10px 20px;
+  border: whitesmoke solid 2px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.add-to-wishlist:hover {
+  background-color: slateblue;
 }
 
 /* Reviews */  
