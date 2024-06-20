@@ -62,3 +62,50 @@ function addToCart(productId) {
     localStorage.setItem('cart', JSON.stringify(cart));
     alert('Product added to cart!');
 }
+
+// ************** Customer Review Entries **************
+document.getElementById('review-form').addEventListener('submit', submitReview);
+
+function submitReview(event) {
+    event.preventDefault();
+    
+    const name = document.getElementById('name').value;
+    const review = document.getElementById('review').value;
+
+    const reviewData = {
+        name,
+        review
+    };
+
+    fetch('/reviews', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(reviewData)
+    })
+    .then(response => response.json())
+    .then(data => {
+        loadReviews();
+        document.getElementById('review-form').reset();
+    })
+    .catch(error => console.error('Error:', error));
+}
+
+function loadReviews() {
+    fetch('/reviews')
+    .then(response => response.json())
+    .then(data => {
+        const reviewsContainer = document.getElementById('reviews');
+        reviewsContainer.innerHTML = '';
+        data.forEach(review => {
+            const reviewElement = document.createElement('div');
+            reviewElement.classList.add('review');
+            reviewElement.innerHTML = `<h3>${review.name}</h3><p>${review.review}</p>`;
+            reviewsContainer.appendChild(reviewElement);
+        });
+    })
+    .catch(error => console.error('Error:', error));
+}
+
+document.addEventListener('DOMContentLoaded', loadReviews);
